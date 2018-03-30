@@ -409,6 +409,19 @@ footer p {
         background-repeat: repeat;
     }
 
+    header .nameandlogo h1 {
+        animation: pulse 5s 1;
+    }
+
+    @keyframes pulse {
+        0% {
+          color: firebrick;
+        }
+        100% {
+          color: whitesmoke;
+        }
+    }
+
     section {
         width: 100%;
     }
@@ -508,9 +521,10 @@ footer p {
 @media screen and (max-width: 640px) {
 
     body {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC); 
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAyCAMAAADyWtKhAAAAOVBMVEXu7u7////v7+/x8fHw8PD+/v79/f38/Pz29vb39/fy8vL09PTt7e319fX6+vr5+fn4+Pjz8/P7+/sjQsgnAAABrklEQVR4Xu2Wy2pkMQxET0ny+z77/z92EHRIM4RJejeLeGGMJbkKu1QYt0vVbajkJJWjTw+f/SiSBl40zKsuc5hVDzjVjEtlOB/DR9GFNZ3wUJ1wFmkRVQe0NoFYffQVwGwNDtVgSeUkgdh2acePAM9iZcghDidDG0mPetzgVdXwgJ6ZpeRcOoRjVdXhPipu4E1aYHBJOpeHr1PSBUbiNwdzDNtrbhvQpXbDtm1wN6kDxiXV3XJx1DzBCGMWtQDfx+4QTWVigSVaPS4kqS2IbpwqNySM6g530Yn1gNUkidLOFeCtExmjSypK/KwNenOwdbaCG7msurclLbyorlhVxcmN7VZdBphjZr4/pBJbz/iucm9sd9GedX2LIj12NzNi9uSXueNZEFjyGdvHlPz7jHfO/eQ7+ZIv85Nv3oP97B7eud/nu41/vtt4vttTDwPbYPylhwGbMZ56eNUZX+iMF5296nd+od/5ot93+uKtfrOXPj5VRvAxYhSdL31sBFcWDqUgEvvRZ6RKHkV6aiJhL+I1l+9y7cdeYv+pl/x6ya+X/HoJP/YSXv8afPPX+AONyic1BlYxVgAAAABJRU5ErkJggg==);
         background-repeat: repeat;
     }
+
     section {
         width: 100%;
     }
@@ -522,19 +536,28 @@ footer p {
         z-index: 1;
     }
 
-
     .nameandlogo  {
         top: 0px;
         left:50%;
         transform:translateX(-50%);
         position: fixed;
-        background-color: grey;
         width:100%;
         max-width: 640px;
         z-index: 2;
         text-align: center;
-        display: block;  
+        display: block;
+        animation: pulse 5s infinite;  
     }
+
+    @keyframes pulse {
+        0% {
+          background-color: orangered;
+        }
+        100% {
+          background-color: grey;
+        }
+      }
+      
 
     header h1 {
         background: none;
